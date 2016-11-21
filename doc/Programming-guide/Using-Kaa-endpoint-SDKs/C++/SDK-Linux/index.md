@@ -54,7 +54,7 @@ wget https://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.
 tar -xf boost_1_55_0.tar.gz
 cd boost_1_55_0
 ./bootstrap.sh
-sudo ./bjam install
+sudo ./bjam cxxflags=-std=c++11 install
 ```
 
 </div></div>
@@ -188,7 +188,7 @@ The step-by-step explanation of CMakeLists.txt follows.
 Firstly, the minimum required CMake  version is specified:
 
 ```CMake
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 2.8.12)
 ```
 
 Next, we tell CMake about our project and enable C++11 standard:
