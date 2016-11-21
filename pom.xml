@@ -20,7 +20,11 @@ Copyright 2014-2016 CyberVision, Inc.
 
     <groupId>org.kaaproject</groupId>
     <artifactId>kaa</artifactId>
+<<<<<<< HEAD
     <version>0.10.0</version>
+=======
+    <version>1.0.0-SNAPSHOT</version>
+>>>>>>> 4e39525fc7a082457dfc4a5e8968f51665594c94
     <packaging>pom</packaging>
 
     <name>Kaa</name>

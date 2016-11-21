@@ -9,6 +9,7 @@ package org.kaaproject.kaa.server.appenders.rest.config.gen;
 @org.apache.avro.specific.AvroGenerated
 public class RestConfig extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RestConfig\",\"namespace\":\"org.kaaproject.kaa.server.appenders.rest.config.gen\",\"fields\":[{\"name\":\"host\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"displayName\":\"Host\",\"by_default\":\"localhost\"},{\"name\":\"port\",\"type\":\"int\",\"displayName\":\"Port\",\"by_default\":10000},{\"name\":\"ssl\",\"type\":\"boolean\",\"displayName\":\"Use SSL\",\"by_default\":\"false\"},{\"name\":\"verifySslCert\",\"type\":\"boolean\",\"displayName\":\"Validate SSL Certificate\",\"by_default\":\"false\"},{\"name\":\"username\",\"type\":[{\"type\":\"string\",\"avro.java.string\":\"String\"},\"null\"],\"displayName\":\"Username\"},{\"name\":\"password\",\"type\":[{\"type\":\"string\",\"avro.java.string\":\"String\"},\"null\"],\"displayName\":\"Password\",\"inputType\":\"password\"},{\"name\":\"connectionPoolSize\",\"type\":\"int\",\"displayName\":\"Thread/connection pool size\",\"by_default\":1},{\"name\":\"header\",\"type\":\"boolean\",\"displayName\":\"Include Kaa header\",\"by_default\":\"false\"},{\"name\":\"path\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"displayName\":\"Relative URI path\"},{\"name\":\"method\",\"type\":{\"type\":\"enum\",\"name\":\"MethodType\",\"symbols\":[\"PUT\",\"POST\"]},\"displayName\":\"Method\"},{\"name\":\"mimeType\",\"type\":{\"type\":\"enum\",\"name\":\"RequestType\",\"symbols\":[\"TEXT\",\"JSON\"]},\"displayName\":\"Request mime type\"}]}");
+<<<<<<< HEAD
   private java.lang.String host;
   private int port;
   private boolean ssl;
@@ -20,6 +21,20 @@ public class RestConfig extends org.apache.avro.specific.SpecificRecordBase impl
   private java.lang.String path;
   private org.kaaproject.kaa.server.appenders.rest.config.gen.MethodType method;
   private org.kaaproject.kaa.server.appenders.rest.config.gen.RequestType mimeType;
+=======
+  public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
+   private java.lang.String host;
+   private int port;
+   private boolean ssl;
+   private boolean verifySslCert;
+   private java.lang.String username;
+   private java.lang.String password;
+   private int connectionPoolSize;
+   private boolean header;
+   private java.lang.String path;
+   private org.kaaproject.kaa.server.appenders.rest.config.gen.MethodType method;
+   private org.kaaproject.kaa.server.appenders.rest.config.gen.RequestType mimeType;
+>>>>>>> 4e39525fc7a082457dfc4a5e8968f51665594c94
 
   /**
    * Default constructor.  Note that this does not initialize fields
